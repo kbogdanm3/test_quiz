@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: 'MedievalSharp', cursive;
+    color: white;
+    background: url('images/ocean-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .background-overlay {
+    background-image: url(images/корабель.jpg);
+    background: fixed;
+    border-image-width: 100%;
+    min-height: 100vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  header h1 {
+    text-align: center;
+    font-size: 3em;
+    color: gold;
+  }
+  
+  main {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  p {
+    font-size: 1.3em;
+    margin: 20px 0;
+  }
+  
+  @font-face {
+    font-family: 'PacificoStatic';
+    src: url('Fonts/Kablammo/Kablammo-Regular-VariableFont_MORF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* Fade-in анімація */
+  .fade-in {
+    font-family: 'PacificoStatic', cursive;
+    font-weight: 100;
+    font-style: normal;
+    opacity: 0;
+    animation: fadeIn 5s ease forwards;
+  }
+  
+  .delay {
+    animation-delay: 1s;
+  }
+  
+  .delay2 {
+    animation-delay: 2s;
+  }
+  
+  .delay3 {
+    animation-delay: 3s;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Магічні кнопки */
+  .magic-button {
+    background-color: #4b0082;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    margin: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px #9370db;
+    display: inline-block;
+  }
+  
+  .magic-button:hover {
+    background-color: #6a0dad;
+    box-shadow: 0 0 25px #dda0dd;
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #ccc;
+  }
